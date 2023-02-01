@@ -17,7 +17,7 @@ const App = () =>{
     <div className="">
       <Jumbotron/>
     </div>
-    <div className="d-flex flex-row mt-4 mb-4" >
+    <div className="d-flex flex-row mt-4 mb-4 "style={{margin: "15%"}} >
         <Cards />
     </div>
     <div className="">

@@ -2,13 +2,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Navbar = () => {
     const estiloNavbar = {
         color: "blue",
+        gridtemplatecolumns: "1fr auto"
         
         
     }
-    const links = [{ id: 1, href: "#section1", text: "Section 1"}];
+    
     return (
         <div>
-            <nav className="navbar navbar-expand-lg bg-body-tertiary  " style={estiloNavbar}>
+            <nav className="navbar navbar-fixed-top navbar-expand-lg bg-body-tertiary " style={estiloNavbar}>
 
                 <div className="container-fluid ">
                     <a className="navbar-brand" style={estiloNavbar} href="#"><FontAwesomeIcon icon="fa-solid fa-earth-americas" />Chile</a>
@@ -24,7 +25,7 @@ const Navbar = () => {
                                 <a className="nav-link" href="#destinos">Destinos</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="" >Contacto</a>
+                                <a className="nav-link" href="#contacto" >Contacto</a>
 
                             </li>
 

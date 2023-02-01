@@ -2,7 +2,8 @@ import { faAlignCenter, faAlignJustify } from "@fortawesome/free-solid-svg-icons
 
 const Footer = () => {
 
-    return (<div>
+    return (<div className="row" id="contacto">
+        {/* primera card */}
         <div className="card-footer card border-primary mb-3" style={{ width: "25%", height: "25%" }} >
             <text style={{ color: "#0d6efd" }}>Ingresa tus datos para contactarnos</text>
             <div class="row g-3">
@@ -25,49 +26,53 @@ const Footer = () => {
                 <a href="#" class="btn btn-outline-primary">Enviar</a>
             </div>
         </div>
-        <div class="col-xs-12 col-md-8 lista-enlaces-wrapper" />
-        <div class="row">
 
-            <div class="col-xs-12 col-sm-2_5 lista-enlaces-container">
-                <div class="titulo-enlaces">información de SERNATUR</div>
-           
-            </div>
-            <div class="col-xs-12 col-sm-3_5 lista-enlaces-container">
-                <div class="titulo-enlaces">ENLACES DE INTERÉS</div>
-                <nav>
-                    <ul class="lista-enlaces">
+        {/* segunda card */}
+        <div class="card card border-primary mb-3" style={{ width: "25%", height: "25%" }}  >
 
+            <div class="col-xs-12 col-md-8 lista-enlaces-wrapper" />
+            <div class="row">
 
-                        <li><a href="https://www.vacacionesterceraedad.cl/" target="_blank">Vacaciones Tercera Edad</a></li>
+                <div class="col-xs-12 col-sm-2_5 lista-enlaces-container">
+                    <div class="titulo-enlaces">información de SERNATUR</div>
 
-
-                        <li><a href="https://www.giradeestudio.cl/" target="_blank">Gira de Estudio</a></li>
+                </div>
+                <div class="col-xs-12 col-sm-3_5 lista-enlaces-container">
+                    <div class="titulo-enlaces">ENLACES DE INTERÉS</div>
+                    <nav>
+                        <ul class="lista-enlaces">
 
 
-                        <li><a href="https://www.turismofamiliar.cl/" target="_blank">Turismo Familiar</a></li>
+                            <li><a href="https://www.vacacionesterceraedad.cl/" target="_blank">Vacaciones Tercera Edad</a></li>
 
 
-                        <li><a href="http://www.calidadturistica.cl/" rel="nofollow noopener" target="_blank">Calidad Turística</a></li>
+                            <li><a href="https://www.giradeestudio.cl/" target="_blank">Gira de Estudio</a></li>
 
 
-                        <li><a href="https://chilesustentable.sernatur.cl" rel="nofollow noopener" target="_blank">Sustentabilidad</a></li>
+                            <li><a href="https://www.turismofamiliar.cl/" target="_blank">Turismo Familiar</a></li>
 
 
-                        <li><a href="http://www.subturismo.gob.cl/" rel="nofollow noopener" target="_blank">Subsecretaría de Turismo</a></li>
+                            <li><a href="http://www.calidadturistica.cl/" rel="nofollow noopener" target="_blank">Calidad Turística</a></li>
 
-                    </ul>
-                </nav>
-            </div>
-            <div class="col-xs-12 col-sm-3_5 lista-enlaces-container">
-                <div class="titulo-enlaces">QUEREMOS AYUDARTE</div>
-                <nav>
-                    <ul class="lista-enlaces">
-                        <li><a href="https://simo.sernatur.gob.cl">Solicitud y entrega de material turístico</a></li>
-                    </ul>
-                </nav>
+
+                            <li><a href="https://chilesustentable.sernatur.cl" rel="nofollow noopener" target="_blank">Sustentabilidad</a></li>
+
+
+                            <li><a href="http://www.subturismo.gob.cl/" rel="nofollow noopener" target="_blank">Subsecretaría de Turismo</a></li>
+
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-xs-12 col-sm-3_5 lista-enlaces-container">
+                    <div class="titulo-enlaces">QUEREMOS AYUDARTE</div>
+                    <nav>
+                        <ul class="lista-enlaces">
+                            <li><a href="https://simo.sernatur.gob.cl">Solicitud y entrega de material turístico</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
-
     </div>
     )
 };
