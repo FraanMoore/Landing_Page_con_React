@@ -2,45 +2,47 @@ import { faAlignCenter, faAlignJustify } from "@fortawesome/free-solid-svg-icons
 
 const Footer = () => {
 
-    return (<div className="row" id="contacto">
+    return (
+        <div className="container-fluid" style={{background: "#F5F5F5"}}>
+    <div className="row" id="contacto" style={{padding:"5%"}}>
         {/* primera card */}
-        <div className="card-footer card border-primary mb-3" style={{ width: "25%", height: "25%" }} >
-            <text style={{ color: "#0d6efd" }}>Ingresa tus datos para contactarnos</text>
-            <div class="row g-3">
-                <div class="col">
-                    <label for="exampleFormControlInput1" className="form-label">Nombre</label>
-                    <input type="text" class="form-control" placeholder="First name" aria-label="First name" />
+        <div className="card-footer card border border-0 mb-3" style={{ width: "50%", height: "25%", background:"#F5F5F5" }} >
+            <text style={{color: "#6C401B"}}>Ingresa tus datos para contactarnos</text>
+            <div className="row g-3">
+                <div className="col">
+                    <label for="exampleFormControlInput1" className="form-label" style={{color: "#6C401B"}}>Nombre</label>
+                    <input type="text" className="form-control" placeholder="First name" aria-label="First name" />
                 </div>
-                <div class="col">
-                    <label for="exampleFormControlInput1" className="form-label">Apellido</label>
-                    <input type="text" class="form-control" placeholder="Last name" aria-label="Last name" />
+                <div className="col">
+                    <label for="exampleFormControlInput1" className="form-label"style={{color: "#6C401B"}}>Apellido</label>
+                    <input type="text" className="form-control" placeholder="Last name" aria-label="Last name" />
                 </div>
             </div>
             <div className="mb-6" >
-                <label for="exampleFormControlInput1" className="form-label">Ingresa tu mail para contactarnos</label>
+                <label for="exampleFormControlInput1" className="form-label"style={{color: "#6C401B"}}>Ingresa tu mail para contactarnos</label>
                 <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
             </div>
             <div className="mb-3" style={{ height: "25%" }}>
-                <label for="exampleFormControlTextarea1" className="form-label">Ingresa tu solicitud...</label>
+                <label for="exampleFormControlTextarea1" className="form-label"style={{color: "#6C401B"}}>Ingresa tu solicitud...</label>
                 <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                <a href="#" class="btn btn-outline-primary">Enviar</a>
+                <a href="#" className="btn btn-outline-primary">Enviar</a>
             </div>
         </div>
 
         {/* segunda card */}
-        <div class="card card border-primary mb-3" style={{ width: "25%", height: "25%" }}  >
+        <div className="card card border border-0 mb-3 position-relative left" style={{ width: "50%", height: "25%", background:"#F5F5F5" }}>
 
-            <div class="col-xs-12 col-md-8 lista-enlaces-wrapper" />
-            <div class="row">
+            <div className="col-xs-12 col-md-8 lista-enlaces-wrapper"  />
+            <div className="row" >
 
-                <div class="col-xs-12 col-sm-2_5 lista-enlaces-container">
-                    <div class="titulo-enlaces">información de SERNATUR</div>
+                <div className="col-xs-12 col-sm-2_5 lista-enlaces-container ">
+                    <div className="titulo-enlaces" style={{color: "#6C401B"}}>información de SERNATUR</div>
 
                 </div>
-                <div class="col-xs-12 col-sm-3_5 lista-enlaces-container">
-                    <div class="titulo-enlaces">ENLACES DE INTERÉS</div>
+                <div className="col-xs-12 col-sm-3_5 lista-enlaces-container">
+                    <div className="titulo-enlaces" style={{color: "#6C401B"}}>ENLACES DE INTERÉS</div>
                     <nav>
-                        <ul class="lista-enlaces">
+                        <ul className="lista-enlaces">
 
 
                             <li><a href="https://www.vacacionesterceraedad.cl/" target="_blank">Vacaciones Tercera Edad</a></li>
@@ -63,16 +65,17 @@ const Footer = () => {
                         </ul>
                     </nav>
                 </div>
-                <div class="col-xs-12 col-sm-3_5 lista-enlaces-container">
-                    <div class="titulo-enlaces">QUEREMOS AYUDARTE</div>
+                <div className="col-xs-12 col-sm-3_5 lista-enlaces-container">
+                    <div className="titulo-enlaces" style={{color: "#6C401B"}}>QUEREMOS AYUDARTE</div>
                     <nav>
-                        <ul class="lista-enlaces">
+                        <ul className="lista-enlaces">
                             <li><a href="https://simo.sernatur.gob.cl">Solicitud y entrega de material turístico</a></li>
                         </ul>
                     </nav>
                 </div>
             </div>
         </div>
+    </div>
     </div>
     )
 };

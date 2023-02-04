@@ -10,7 +10,7 @@ const Jumbotron = (props) => {
 
         <h1 className="display-5 fw-bold" style={{color: "#6C401B"}}>Guía del viajero en Chile</h1>
         
-        <button className="btn btn-outline-primary" type="button">Más información</button>
+        <button className="btn btn-light" style={{color: "#6C401B"}} type="button">Más información</button>
       </div>
     </div>
     
